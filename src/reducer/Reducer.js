@@ -1,3 +1,6 @@
+ 
+ /// brought in the state
+
 const initialState = {
     additionalPrice: 0,
     car: {
@@ -15,7 +18,12 @@ const initialState = {
     ]
   };
 
-  export const Reducer = (state = initialState, action) =>{
+  /// made a reducer
+  //pass in initialState
+
+  export const Reducer = (state = initialState, action) =>{ 
+
+    console.log(state, action)
         switch(action.type) {
             case 'ADD_FEATURE':
                 return {
@@ -41,3 +49,5 @@ const initialState = {
 
         }
   }
+
+  Reducer(undefined, { type: '@@redux/INITs.r.a.n.d.o.m'});
